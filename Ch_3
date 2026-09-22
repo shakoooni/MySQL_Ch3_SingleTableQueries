@@ -1,0 +1,34 @@
+/***********************************************
+Date : 2026.09.17
+Name: Jay Meesala , Zee Zheer
+Chapter 3 Assignment
+github:
+
+************************************************/
+SELECT 
+    customer_id,
+    CONCAT(last_name, ',', first_name) AS cust_name,
+    email,
+    active
+FROM
+    customer
+WHERE
+    active = 0
+ORDER BY last_name , first_name;
+
+/***********************************************
+ 
+Query 2: Write a query that reports the following:
+•	All customers with INVALID email addresses. A valid email address is the first name, a period, the last name, and @sakilacustomer.org. Example: debbie.johnson@sakilacustomer.org
+•	Note: to thoroughly test this query, temporarily change the WHERE clause to report VALID emails
+
+
+************************************************/
+SELECT first_name, last_name, email,
+       CONCAT(first_name, '.', last_name, '@sakilacustomer.org') AS valid_email
+FROM customer
+WHERE email != CONCAT(first_name, '.', last_name, '@sakilacustomer.org')
+ORDER BY valid_email;
+
+
+
