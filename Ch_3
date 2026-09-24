@@ -105,6 +105,18 @@ WHERE description REGEXP 'Robot'
   AND description REGEXP 'Squirrel'
 ORDER BY title
 
+/***********************************************
+Query 9: Write a query that reports the following:
+•	unique customers who have NOT returned their rental
+•	sort by customer id
+•	Note: to thoroughly test this query, temporarily change the WHERE clause to report rentals that have been returned
+************************************************/
+SELECT DISTINCT customer_id, return_date
+FROM rental
+WHERE return_date IS NULL
+ORDER BY customer_id
+
+
        
 
        
