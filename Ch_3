@@ -92,6 +92,19 @@ SELECT title, rental_rate, rating
 FROM film
 WHERE rating IN ('G', 'PG', 'PG-13')
 ORDER BY rating, title
+
+/***********************************************
+Query 8: Write a query that reports the following:
+•	films that have the words robot and squirrel in the description
+•	sort by title
+•	Note: to thoroughly test this query, temporarily comment out the WHERE clause
+************************************************/
+SELECT title, description, rating
+FROM film
+WHERE description REGEXP 'Robot'
+  AND description REGEXP 'Squirrel'
+ORDER BY title
+
        
 
        
