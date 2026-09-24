@@ -33,12 +33,13 @@ The SQL queries are in [Ch_3](Ch_3).
 - Filters and formats payments
 - Shortens film descriptions and filters rental duration
 - Finds films with selected special features
+- Filters films by rating and by words in their descriptions
 
 ---
 
 ## New Concepts Used
 
-`SELECT`, column aliases, arithmetic expressions, `ROUND`, `CONCAT`, `LEFT`, `DATE_FORMAT`, `WHERE`, `BETWEEN`, `LIKE`, `AND`, `OR`, and `ORDER BY`.
+`SELECT`, column aliases, arithmetic expressions, `ROUND`, `CONCAT`, `LEFT`, `DATE_FORMAT`, `WHERE`, `BETWEEN`, `LIKE`, `IN`, `REGEXP`, `AND`, `OR`, and `ORDER BY`.
 
 ---
 
@@ -61,6 +62,12 @@ The SQL queries are in [Ch_3](Ch_3).
 
 ### Query 6
 ![Query 6 result](assets/Q6.png)
+
+### Query 7
+![Query 7 result](assets/Q7.png)
+
+### Query 8
+![Query 8 result](assets/Q8.png)
 
 ---
 
