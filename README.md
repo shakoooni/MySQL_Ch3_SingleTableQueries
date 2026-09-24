@@ -34,12 +34,13 @@ The SQL queries are in [Ch_3](Ch_3).
 - Shortens film descriptions and filters rental duration
 - Finds films with selected special features
 - Filters films by rating and by words in their descriptions
+- Finds customers with unreturned rentals and lists unique districts
 
 ---
 
 ## New Concepts Used
 
-`SELECT`, column aliases, arithmetic expressions, `ROUND`, `CONCAT`, `LEFT`, `DATE_FORMAT`, `WHERE`, `BETWEEN`, `LIKE`, `IN`, `REGEXP`, `AND`, `OR`, and `ORDER BY`.
+`SELECT`, column aliases, arithmetic expressions, `ROUND`, `CONCAT`, `LEFT`, `DATE_FORMAT`, `WHERE`, `BETWEEN`, `LIKE`, `IN`, `REGEXP`, `AND`, `OR`, `IS NULL`, `DISTINCT`, `ORDER BY`, and `LIMIT`.
 
 ---
 
@@ -68,6 +69,12 @@ The SQL queries are in [Ch_3](Ch_3).
 
 ### Query 8
 ![Query 8 result](assets/Q8.png)
+
+### Query 9
+![Query 9 result](assets/Q9.png)
+
+### Query 10
+![Query 10 result](assets/Q10.png)
 
 ---
 
